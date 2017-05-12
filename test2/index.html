@@ -9,6 +9,10 @@
             width : 200px;
             height : 200px;
             background : pink;
+            margin : 20px;
+
+        }
+        .with-clock {
             clip-path : url(#clock);
         }
     </style>
@@ -16,8 +20,7 @@
 <body>
     <h1>CSS clip path property experiment</h1>
     <div class="foo"></div>
-    <div class="foo"></div>
-    <div class="foo"></div>
+    <div class="foo with-clock"></div>
     <svg height="0" width="0">
         <defs>
             <clipPath id="clock">
@@ -25,6 +28,6 @@
             </clipPath>
         </defs>
     </svg>
-    <h1>Test 2</h1>
+
 </body>
 </html>
