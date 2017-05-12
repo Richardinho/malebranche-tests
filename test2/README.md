@@ -8,7 +8,7 @@ Effectively allowing custom shapes to be applied to elements, this enables a lot
 
 Here is a simple example. A CSS rule set defines a list of declarations which includes a `clip-path` property referencing an svg clip path element using the `url()` function.
 
-(demo 1)[https://richardinho.github.io/malebranche-tests/test2/]
+[demo 1](https://richardinho.github.io/malebranche-tests/test2/)
 ```
     .foo {
         width : 200px;
