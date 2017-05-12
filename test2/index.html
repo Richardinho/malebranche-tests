@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        .foo {
+            width : 200px;
+            height : 200px;
+            background : pink;
+            clip-path : url(#clock);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS clip path property experiment</h1>
+    <div class="foo"></div>
+    <div class="foo"></div>
+    <div class="foo"></div>
+    <svg height="0" width="0">
+        <defs>
+            <clipPath id="clock">
+                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414-2.829 2.829z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+    <h1>Test 2</h1>
+</body>
+</html>
