@@ -4,6 +4,8 @@ How to use svg font icons from Icomoon as clip paths.
 
 In the first example, an SVG fragment has been inlined into an HTML page. The SVG fragment contains a clip path element which contains a path element. This path element has been lifted as is from a clock svg downloaded from Icomoon. Also on the page is an html element. This element has a CSS rule set applied to it which includes a clip path declaration which references the aforementioned SVG clip path. The result is that the html element is clipped in the shape of a clock.
 
+![example 1](https://richardinho.github.io/malebranche-tests/test2/images/example-1.png)
+
 The first example demonstrates the simple use of the CSS `clip-path` property.
 It displays to identically sized pink squares, one on top of the other.
 The important difference between them is that the second square has a clip path applied to it. The resulting effect is that it is clipped in the shape of the clip path, in this case a clock.
@@ -15,6 +17,8 @@ This is possible if we add the clipPathUnits attribute to the clipPath element a
 This means that if an x coordinate is 16, the resulting proportionate coord will be 16 / 32 = .5.
 When we then apply the new clip path to our element it will scale and stretch to match its dimensions.
 You can see this happening in example 2.
+
+![](https://richardinho.github.io/malebranche-tests/test2/images/example-1.png)
 
 
 [example 1](https://richardinho.github.io/malebranche-tests/test2/)
