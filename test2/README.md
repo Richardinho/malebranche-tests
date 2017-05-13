@@ -18,7 +18,7 @@ This means that if an x coordinate is 16, the resulting proportionate coord will
 When we then apply the new clip path to our element it will scale and stretch to match its dimensions.
 You can see this happening in example 2.
 
-![](https://richardinho.github.io/malebranche-tests/test2/images/example-1.png)
+![](https://richardinho.github.io/malebranche-tests/test2/images/example-2.png)
 
 
 [example 1](https://richardinho.github.io/malebranche-tests/test2/)
