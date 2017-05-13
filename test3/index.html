@@ -2,43 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <style>
-
-        .foo {
-            width : 200px;
-            height : 200px;
-            background : pink;
-            margin : 20px;
-        }
-        .with-lab {
-            clip-path : url(#lab);
-        }
-        .bar, .blah, .nix, .lah {
-            background  : pink;
-            margin : 20px;
-        }
-        .bar { width : 50px; height : 50px; }
-        .blah { width : 150px; height : 150px; }
-        .nix { width : 250px; height : 250px; }
-        .lah { width : 350px; height : 350px; }
-    </style>
+    <title>lab icon</title>
+    <link href="./main.css" rel="stylesheet">
 </head>
 <body>
-<h1>CSS clip path property experiment</h1>
-<div class="foo"></div>
-<div class="foo with-lab"></div>
-<div class="bar with-lab"></div>
-<div class="blah with-lab"></div>
-<div class="nix with-lab"></div>
-<div class="lah with-lab"></div>
-<svg height="0" width="0">
-    <defs>
-        <clipPath id="lab" clipPathUnits="objectBoundingBox">
-            <path d="M0.933875 0.785625l-0.308875 -0.5146875v-0.20846875h0.03125c0.0171875 0 0.03125 -0.0140625 0.03125 -0.03125s -0.0140625 -0.03125 -0.03125 -0.03125h-0.3125c-0.0171875 0 -0.03125 0.0140625 -0.03125 0.03125s 0.0140625 0.03125 0.03125 0.03125h0.03125v0.20846875l-0.308875 0.5146875c-0.07075 0.11790625 -0.016125 0.214375 0.121375 0.214375h0.625c0.1375 0 0.192125 -0.09646875 0.121375 -0.214375ZM0.235375 0.625l0.202125 -0.33684375v-0.22565625h0.125v0.22565625l0.202125 0.33684375h-0.52921875Z"/>
-        </clipPath>
-    </defs>
-</svg>
-
+    <h1>CSS clip path property experiment with lab icon</h1>
+    <div class="square1 with-clip-path"></div>
+    <div class="square2 with-clip-path"></div>
+    <div class="square3 with-clip-path"></div>
+    <div class="square4 with-clip-path"></div>
+    <svg height="0" width="0">
+        <defs>
+            <clipPath id="lab" clipPathUnits="objectBoundingBox">
+                <path d="M0.933875 0.785625l-0.308875 -0.5146875v-0.20846875h0.03125c0.0171875 0 0.03125 -0.0140625 0.03125 -0.03125s -0.0140625 -0.03125 -0.03125 -0.03125h-0.3125c-0.0171875 0 -0.03125 0.0140625 -0.03125 0.03125s 0.0140625 0.03125 0.03125 0.03125h0.03125v0.20846875l-0.308875 0.5146875c-0.07075 0.11790625 -0.016125 0.214375 0.121375 0.214375h0.625c0.1375 0 0.192125 -0.09646875 0.121375 -0.214375ZM0.235375 0.625l0.202125 -0.33684375v-0.22565625h0.125v0.22565625l0.202125 0.33684375h-0.52921875Z"/>
+            </clipPath>
+        </defs>
+    </svg>
+    <p>This shows an Icomoon icon which has had been converted into a clip path with fractional coordinates.</p>
 </body>
 </html>
