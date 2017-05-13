@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,29 +6,58 @@
     <title></title>
     <style>
 
-        .foo {
-            width : 200px;
-            height : 200px;
-            background : pink;
-            margin : 20px;
-
+        .container {
+        overflow : hidden;
         }
+
         .with-clock {
-            clip-path : url(#clock);
+        clip-path : url(#clock);
+        }
+        .bar, .bar2, .bar3, .bar4 {
+
+        background : pink;
+        margin : 20px;
+        float : left;
+        }
+        .bar {
+        width : 40px;
+        height : 40px;
+        }
+        .bar2 {
+        width : 80px;
+        height : 80px;
+        }
+        .bar3 {
+        width : 120px;
+        height : 120px;
+        }
+        .bar4 {
+        width : 160px;
+        height : 160px;
         }
     </style>
 </head>
 <body>
-    <h1>CSS clip path property experiment</h1>
-    <div class="foo"></div>
-    <div class="foo with-clock"></div>
-    <svg height="0" width="0">
-        <defs>
-            <clipPath id="clock">
-                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414-2.829 2.829z"></path>
-            </clipPath>
-        </defs>
-    </svg>
+<h1>CSS clip path property experiment</h1>
+<div class='container'>
+    <div class="bar"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+</div>
+<div class="container">
+    <div class="bar with-clock"></div>
+    <div class="bar2 with-clock"></div>
+    <div class="bar3 with-clock"></div>
+    <div class="bar4 with-clock"></div>
+</div>
+<svg height="0" width="0">
+    <defs>
+        <clipPath id="clock">
+            <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414-2.829 2.829z"></path>
+        </clipPath>
+    </defs>
+</svg>
 
 </body>
 </html>
