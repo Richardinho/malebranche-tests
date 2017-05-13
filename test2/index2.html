@@ -8,11 +8,26 @@
         .with-clock {
             clip-path : url(#clock);
         }
-        .bar {
-            width : 150px;
-            height : 210px;
+        .bar, .bar2, .bar3, .bar4 {
+
             background : green;
             margin : 20px;
+        }
+        .bar {
+            width : 40px;
+            height : 40px;
+        }
+        .bar2 {
+            width : 80px;
+            height : 80px;
+        }
+        .bar3 {
+            width : 120px;
+            height : 120px;
+        }
+        .bar4 {
+            width : 160px;
+            height : 160px;
         }
     </style>
 </head>
@@ -20,6 +35,9 @@
     <h1>CSS clip path property experiment</h1>
     <div class="bar"></div>
     <div class="bar with-clock"></div>
+    <div class="bar2 with-clock"></div>
+    <div class="bar3 with-clock"></div>
+    <div class="bar4 with-clock"></div>
     <svg height="0" width="0">
         <defs>
             <clipPath id="clock" clipPathUnits="objectBoundingBox">
