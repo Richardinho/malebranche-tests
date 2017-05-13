@@ -18,7 +18,7 @@ This state of affairs may be satisfactory some of the time, but often we will wi
 Here we have a similar set up. There are two identically sized green squares in this picture, with the second square having a clip path applied to it. This time, however, the clip path scales and stretches to fit the element.
 
 We have added the `clipPathUnits` attribute to the SVG clip path element with a value of `objectBoundingBox`. 
-Then, we have use Malebranche to covert the absolute coordinates of the source SVG image into fractional units. e.g. values between 0 and 1.
+Then, we have used Malebranche to covert the absolute coordinates of the source SVG image into fractional units. e.g. values between 0 and 1.
 
 ```
     <svg height="0" width="0">
