@@ -8,7 +8,7 @@ Effectively allowing custom shapes to be applied to elements, this enables a lot
 
 Here is a simple example. A CSS rule set defines a list of declarations which includes a `clip-path` property referencing an svg clip path element using the `url()` function.
 
-[demo 1](https://richardinho.github.io/malebranche-tests/test2/)
+
 ```
     .foo {
         width : 200px;
@@ -33,4 +33,7 @@ The SVG clip path definition follows. Note the `id` property of the `clipPath` e
     </svg>
 ```
 
+See the demo [here](https://richardinho.github.io/malebranche-tests/test2/). This looks reasonably good, but the dimensions of the HTML element has no relation to the clip path. The applied clip path simply uses the coordinates as they are in the original SVG element and translates them according to the current position of the HTML element. Resizing the HTML element will have effect at all on the clip path. This is annoying if you want the clip path to fit to the dimensions of the HTML element and scale and resize as it changes. 
+
+Fortunately, this is possible to do. An attribute on the clip path element itself determines how the clip path is applied to a referencing element. By default, it is set to 'userspaceonuse', which means, as we have already observed, that the clip path will use the coordinates of the clip path as they are, but translate them in accordance with the HTML element's position. Another value this attribute can be set to is 'objectBoundingBox'. This means that the path coordinates will be in relation to the size of the referencing html element. However, it is not simply a case of adding the attribute to the clip path element. This will not work. It is also necessary to change the coordinates of the path from absolute ones to relative ones, that is values between 0 and 1. Thus, if an element has a width of 50px, an x coordinate with the value of .5 will be positioned 25 pixels (halfway) from the left edge of the element.
 
