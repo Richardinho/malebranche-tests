@@ -2,53 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <style>
-
-        .container {
-            overflow : hidden;
-        }
-
-        .with-clock {
-            clip-path : url(#clock);
-        }
-        .bar, .bar2, .bar3, .bar4 {
-
-            background : green;
-            margin : 20px;
-            float : left;
-        }
-        .bar {
-            width : 40px;
-            height : 40px;
-        }
-        .bar2 {
-            width : 80px;
-            height : 80px;
-        }
-        .bar3 {
-            width : 120px;
-            height : 120px;
-        }
-        .bar4 {
-            width : 160px;
-            height : 160px;
-        }
-    </style>
+    <title>with fractional coordinates</title>
+    <link href="./main.css" rel="stylesheet">
 </head>
 <body>
     <h1>CSS clip path property experiment</h1>
     <div class='container'>
-        <div class="bar"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div class="bar4"></div>
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="square3"></div>
+        <div class="square4"></div>
     </div>
     <div class="container">
-        <div class="bar with-clock"></div>
-        <div class="bar2 with-clock"></div>
-        <div class="bar3 with-clock"></div>
-        <div class="bar4 with-clock"></div>
+        <div class="square1 with-clip-path"></div>
+        <div class="square2 with-clip-path"></div>
+        <div class="square3 with-clip-path"></div>
+        <div class="square4 with-clip-path"></div>
     </div>
     <svg height="0" width="0">
         <defs>
@@ -57,6 +26,5 @@
             </clipPath>
         </defs>
     </svg>
-
 </body>
 </html>
