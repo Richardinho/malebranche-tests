@@ -15,4 +15,7 @@ Fortunately this problem is solvable, as you can see in the next image.
 ![example 2](https://richardinho.github.io/malebranche-tests/test2/images/example-2.png)
 [live demo](https://richardinho.github.io/malebranche-tests/test2/index2.html)
 
-Here we have a similar set up. There are two identically sized green squares in this picture, with the the second square having a clip path applied to it. This time, however, the clip path scales and stretches to fit the element.
+Here we have a similar set up. There are two identically sized green squares in this picture, with the second square having a clip path applied to it. This time, however, the clip path scales and stretches to fit the element.
+
+
+What we have done is added the `clipPathUnits` attribute to the SVG clip path element with a value of `objectBoundingBox`. Then, we have use Malebranche to covert the absolute coordinates of the source SVG image into proportional units. 
