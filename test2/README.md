@@ -2,6 +2,7 @@
 
 The following image shows two identically sized pink squares. 
 The second square looks like a clock because it has had a clip path in the shape of a clock applied to it.
+The path for the clip path was copied from an Icomoon icon.
 
 ![example 1](https://richardinho.github.io/malebranche-tests/test2/images/example-1.png)
 [live demo](https://richardinho.github.io/malebranche-tests/test2/)
