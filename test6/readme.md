@@ -1,0 +1,1 @@
+Malebranche looks through an xml src file for clipPath elements. These clip path elements don't have to be nested within SVG elements.
