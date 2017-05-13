@@ -1,0 +1,31 @@
+
+.container {
+    overflow : hidden;
+}
+.with-clip-path {
+    clip-path : url(#clock);
+}
+.square1,
+.square2,
+.square3,
+.square4 {
+    background : green;
+    margin : 20px;
+    float : left;
+}
+.square1 {
+    width : 40px;
+    height : 40px;
+}
+.square2 {
+    width : 80px;
+    height : 80px;
+}
+.square3 {
+    width : 120px;
+    height : 120px;
+}
+.square4 {
+    width : 160px;
+    height : 160px;
+}
