@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>custom svg</title>
+    <link href="./main.css" rel="stylesheet">
+</head>
+<body>
+<h1>Custom SVG converted into clip path</h1>
+<div class="square1 with-clip-path"></div>
+<div class="square2 with-clip-path"></div>
+<div class="square3 with-clip-path"></div>
+<div class="square4 with-clip-path"></div>
+<svg height="0" width="0">
+    <defs>
+        <clipPath id="blah" clipPathUnits="objectBoundingBox">
+            <rect x="0" y="0.1" width="1" height="0.1"/>
+            <circle cx="0.2" cy="0.3" r="0.1"/>
+            <circle cx="0.4" cy="0.5" r="0.2"/>
+        </clipPath>
+    </defs>
+</svg>
+<p>My custom svg shape</p>
+</body>
+</html>
