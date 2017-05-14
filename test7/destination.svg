@@ -5,5 +5,8 @@
     <rect x="0" y="0.1" width="1" height="0.1"/>
     <circle cx="0.2" cy="0.3" r="0.1"/>
     <circle cx="0.4" cy="0.5" r="0.2"/>
+    <text x="0" y="0.35" font-family="Verdana" font-size="0.35">
+            Hello World
+        </text>
   </clipPath>
 </svg>

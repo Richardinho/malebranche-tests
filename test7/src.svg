@@ -15,5 +15,8 @@
                  />
         <circle cx="20" cy="30" r="10"/>
         <circle cx="40" cy="50" r="20"/>
+        <text x="0" y="35" font-family="Verdana" font-size="35">
+            Hello World
+        </text>
     </clipPath>
 </svg>
